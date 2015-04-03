@@ -7,14 +7,14 @@ Gem::Specification.new do |spec|
   spec.name          = "amber_one"
   spec.version       = AmberOne::VERSION
   spec.authors       = ["saurabh goel"]
-  spec.email         = ["saurabhgoel93@gmail.com"]
+  spec.email         = ["saurabh.goel@getamber.in"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gem for Amber. Single gem for cross platform functionality.}
+  spec.description   = %q{Adds features like common assets, authorization, configurations etc.}
+  spec.homepage      = "http://www.getamber.in"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = Dir["README.md","Gemfile","Rakefile", "spec/*", "lib/**/*"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
