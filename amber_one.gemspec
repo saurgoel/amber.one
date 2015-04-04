@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://www.getamber.in"
   spec.license       = "MIT"
 
-  spec.files         = Dir["README.md","Gemfile","Rakefile","spec/*","{lib,vendor}/**/*"]
+  spec.files         = Dir["README.md","Gemfile","Rakefile","spec/*","{lib,app,vendor}/**/*"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
