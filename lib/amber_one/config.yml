@@ -11,6 +11,10 @@ default:
   memcached_host: "localhost"
   memcached_port: "11211"
 
+  # Database settings
+  database_host: "localhost"
+  database_port: "5432"
+
   # emails
   email_domain: "getamber.in"
 
@@ -34,4 +38,18 @@ development:
   session_domain: ".amber.com"
 
 production:
-  session_domain: ".getamber.in"
+  # Redis Settings
+  redis_host: "redis.amber.in"
+  redis_port: "6379"
+
+  # Elasticsearch Settings
+  elasticsearch_host: "es1.amber.in"
+  elasticsearch_port: "9200"
+
+  # Memcached Settings
+  memcached_host: "localhost"
+  memcached_port: "11211"
+
+  # Database
+  database_host: "db.amber.in"
+  database_port: "5432"
