@@ -2,12 +2,11 @@ module AmberOne
   # contains all the configurations
   class Config
     require 'yaml'
-    def initialize(environment=nil)
-      vars = YAML.load_file("#{File.dirname(__FILE__)}/config.yml")
-      @config = vars["default"]
-      @config = @config.merge(vars[environment]) if vars[environment].present?
-      # @config={}
-    end
+    # def initialize(environment=nil)
+    #   vars = YAML.load_file("#{File.dirname(__FILE__)}/config.yml")
+    #   @config = vars["default"]
+    #   @config = @config.merge(vars[environment]) if vars[environment].present?
+    # end
 
     private
     # used to set additional variables
