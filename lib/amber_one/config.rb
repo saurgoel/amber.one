@@ -4,22 +4,20 @@ module AmberOne
       @config={}
     end
 
-    private
     # used to set additional variables
+    private
     def method_missing(method_name, *arguments, &block)
-      method_name = method_name.to_s
-      if method_name =~ /=$/
-        @config[$`]=arguments.first
+      if method_name.to_s =~ /=$/
+        @config[$`.to_sym]=arguments.first
       elsif @config.has_key?(method_name)
-        @config[method_name.to_s]
+        @config[method_name]
       else
         super
       end
     end
 
     def respond_to_missing?(method_name, include_private = false)
-      method_name = method_name.to_s
-      method_name =~ /=$/ or @config.has_key? method_name
+      method_name.to_s =~ /=$/ or @config.has_key? method_name
     end
   end
 end
