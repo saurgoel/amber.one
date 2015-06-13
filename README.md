@@ -1,9 +1,23 @@
 # AmberOne
 
-Amber One gem brings common functionality across the amber platform. Features: 
+Amber One gem brings common functionality across the amber platform. Features:
 1. Common assets (fonts, stylesheets, icons, javascripts across the platform)
 2. Central Configurations
 3. Helper methods
+
+## Build
+
+Use the following command to build
+
+    $ gem build amber_one.gemspec
+
+Installing on local system
+
+    $ gem install ./hola-0.0.0.gem
+
+Pushing the gem to fury.io
+
+  go to fury.io and select upload gem
 
 ## Installation
 
