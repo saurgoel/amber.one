@@ -1099,11 +1099,11 @@ span.badge {
 // =====================================components/icons-material-design
 @font-face {
     font-family: "Material-Design-Icons";
-    src:url("#{$icons-font-path}Material-Design-Icons.eot");
-    src:url("#{$icons-font-path}Material-Design-Icons.eot?#iefix") format("embedded-opentype"),
-        url("#{$icons-font-path}Material-Design-Icons.woff") format("woff"),
-        url("#{$icons-font-path}Material-Design-Icons.ttf") format("truetype"),
-        url("#{$icons-font-path}Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+    src:font-url("material-design-icons/Material-Design-Icons.eot");
+    src:font-url("material-design-icons/Material-Design-Icons.eot") format("embedded-opentype"),
+        font-url("material-design-icons/Material-Design-Icons.woff") format("woff"),
+        font-url("material-design-icons/Material-Design-Icons.ttf") format("truetype"),
+        font-url("material-design-icons/Material-Design-Icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -3622,30 +3622,30 @@ nav {
 // =====================================components/roboto
 @font-face {
     font-family: "Roboto";
-    src: url("#{$roboto-font-path}Roboto-Thin.ttf");
+    src: font-url("roboto/Roboto-Thin.ttf");
     font-weight: 200;
 }
 @font-face {
     font-family: "Roboto";
-    src: url("#{$roboto-font-path}Roboto-Light.ttf");
+    src: font-url("roboto/Roboto-Light.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("#{$roboto-font-path}Roboto-Regular.ttf");
+    src: font-url("roboto/Roboto-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("#{$roboto-font-path}Roboto-Medium.ttf");
+    src: font-url("roboto/Roboto-Medium.ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("#{$roboto-font-path}Roboto-Bold.ttf");
+    src: font-url("roboto/Roboto-Bold.ttf");
     font-weight: 700;
 }
 
