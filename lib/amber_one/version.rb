@@ -1,3 +1,3 @@
 module AmberOne
-  VERSION = "0.1.9"
+  VERSION = "0.2.3"
 end
